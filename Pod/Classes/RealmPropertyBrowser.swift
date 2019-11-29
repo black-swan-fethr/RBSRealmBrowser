@@ -78,11 +78,12 @@ final class RealmPropertyBrowser: UIViewController {
     }
     
     private func configureColors() {
-        if #available(iOS 13.0, *) {
-            viewRealm.tableView.backgroundColor = .systemBackground
-        } else {
+// Commented out for swift  5.0 compatibility
+//        if #available(iOS 13.0, *) {
+//            viewRealm.tableView.backgroundColor = .systemBackground
+//        } else {
             viewRealm.tableView.backgroundColor = .white
-        }
+//        }
     }
 
     private func configureTableView() {

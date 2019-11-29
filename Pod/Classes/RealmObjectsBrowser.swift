@@ -107,15 +107,16 @@ final class RealmObjectsBrowser: UIViewController, UIViewControllerPreviewingDel
     }
     
     private func configureColors() {
-        if #available(iOS 13.0, *) {
-            viewRealm.tableView.backgroundColor = .systemBackground
-            viewRealm.tableView.tintColor = .label
-            navigationController?.toolbar.backgroundColor = .secondarySystemBackground
-        } else {
+// Commented out for swift  5.0 compatibility
+//        if #available(iOS 13.0, *) {
+//            viewRealm.tableView.backgroundColor = .systemBackground
+//            viewRealm.tableView.tintColor = .label
+//            navigationController?.toolbar.backgroundColor = .secondarySystemBackground
+//        } else {
             viewRealm.tableView.backgroundColor = .white
             viewRealm.tableView.tintColor = RealmStyle.tintColor
             navigationController?.toolbar.backgroundColor = .white
-        }
+//        }
     }
     
     private func showEmptyView(_ show: Bool) {
@@ -228,12 +229,13 @@ final class RealmObjectsBrowser: UIViewController, UIViewControllerPreviewingDel
         let result = engine.create(named: className)
         let propertyBrowser = RealmPropertyBrowser(object: result, engine: engine, inEditMode: true)
         let navCon = UINavigationController(rootViewController: propertyBrowser)
-        
-        if #available(iOS 13.0, *) {
-            navCon.navigationBar.compactAppearance = navigationController!.navigationBar.standardAppearance
-            navCon.navigationBar.scrollEdgeAppearance = navigationController!.navigationBar.standardAppearance
-            navCon.navigationBar.standardAppearance = navigationController!.navigationBar.standardAppearance
-        }
+
+    // Commented out for swift  5.0 compatibility
+//        if #available(iOS 13.0, *) {
+//            navCon.navigationBar.compactAppearance = navigationController!.navigationBar.standardAppearance
+//            navCon.navigationBar.scrollEdgeAppearance = navigationController!.navigationBar.standardAppearance
+//            navCon.navigationBar.standardAppearance = navigationController!.navigationBar.standardAppearance
+//        }
         present(navCon, animated: true)
     }
     

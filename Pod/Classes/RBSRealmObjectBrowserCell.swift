@@ -103,20 +103,21 @@ final class RealmObjectBrowserCell: UITableViewCell {
     // Configuration
     
     private func configureColors() {
-        if #available(iOS 13.0, *) {
-            labelTitle.textColor = .label
-            labelTitle.backgroundColor = .systemBackground
-            labelDetailText.backgroundColor = .systemBackground
-            labelDetailText.textColor = .label
-            backgroundColor = .systemBackground
-            contentView.backgroundColor = .systemBackground
-        } else {
+        // Commented out for swift  5.0 compatibility
+//        if #available(iOS 13.0, *) {
+//            labelTitle.textColor = .label
+//            labelTitle.backgroundColor = .systemBackground
+//            labelDetailText.backgroundColor = .systemBackground
+//            labelDetailText.textColor = .label
+//            backgroundColor = .systemBackground
+//            contentView.backgroundColor = .systemBackground
+//        } else {
             labelTitle.textColor = .darkGray
             labelTitle.backgroundColor = .white
             labelDetailText.backgroundColor = .white
             labelDetailText.textColor = .darkGray
             backgroundColor = .white
             contentView.backgroundColor = .white
-        }
+//        }
     }
 }

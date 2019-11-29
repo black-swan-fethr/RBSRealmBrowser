@@ -166,23 +166,24 @@ public final class RBSRealmBrowser: UIViewController {
     }
     
     private func configureColors() {
-        if #available(iOS 13.0, *) {
-            viewRealm.backgroundColor = .systemBackground
-            let navBarAppearance = UINavigationBarAppearance()
-            navBarAppearance.backgroundColor = RealmStyle.tintColor
-            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-            navigationController?.navigationBar.standardAppearance = navBarAppearance
-            navigationController?.navigationBar.compactAppearance = navBarAppearance
-            navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
-            navigationController?.view.backgroundColor = .systemBackground
-            navigationController?.toolbar.backgroundColor = .secondarySystemBackground
-            
-            viewRealm.tableView.backgroundColor = .systemBackground
-        } else {
+    // Commented out for swift  5.0 compatibility
+//        if #available(iOS 13.0, *) {
+//            viewRealm.backgroundColor = .systemBackground
+//            let navBarAppearance = UINavigationBarAppearance()
+//            navBarAppearance.backgroundColor = RealmStyle.tintColor
+//            navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+//            navigationController?.navigationBar.standardAppearance = navBarAppearance
+//            navigationController?.navigationBar.compactAppearance = navBarAppearance
+//            navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+//            navigationController?.view.backgroundColor = .systemBackground
+//            navigationController?.toolbar.backgroundColor = .secondarySystemBackground
+//
+//            viewRealm.tableView.backgroundColor = .systemBackground
+//        } else {
             viewRealm.backgroundColor = .white
             navigationController?.view.backgroundColor = .white
             viewRealm.tableView.backgroundColor = .white
-        }
+//        }
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.toolbar.isTranslucent = false
     }
