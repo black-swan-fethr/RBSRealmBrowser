@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B6EB0E6B239130CF00CDCFC7"
+               BlueprintIdentifier = "B6EB0EC523915B9B00CDCFC7"
                BuildableName = "RBSRealmBrowser.framework"
                BlueprintName = "RBSRealmBrowser"
                ReferencedContainer = "container:RBSRealmBrowser.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6EB0E6B239130CF00CDCFC7"
+            BlueprintIdentifier = "B6EB0EC523915B9B00CDCFC7"
             BuildableName = "RBSRealmBrowser.framework"
             BlueprintName = "RBSRealmBrowser"
             ReferencedContainer = "container:RBSRealmBrowser.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6EB0E6B239130CF00CDCFC7"
+            BlueprintIdentifier = "B6EB0EC523915B9B00CDCFC7"
             BuildableName = "RBSRealmBrowser.framework"
             BlueprintName = "RBSRealmBrowser"
             ReferencedContainer = "container:RBSRealmBrowser.xcodeproj">
