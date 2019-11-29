@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89D10CCA90FA57A641CC7EC3 /* Pods_RBSRealmBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20F9807C0F7205ABAD2D652 /* Pods_RBSRealmBrowser.framework */; };
 		B6EB0E71239130CF00CDCFC7 /* RBSRealmBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EB0E6F239130CF00CDCFC7 /* RBSRealmBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6EB0E86239131A500CDCFC7 /* BrowserEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB0E7E239131A400CDCFC7 /* BrowserEngine.swift */; };
 		B6EB0E87239131A500CDCFC7 /* RealmObjectsBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB0E7F239131A400CDCFC7 /* RealmObjectsBrowser.swift */; };
@@ -17,12 +16,11 @@
 		B6EB0E8B239131A500CDCFC7 /* RBSRealmBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB0E83239131A500CDCFC7 /* RBSRealmBrowser.swift */; };
 		B6EB0E8C239131A500CDCFC7 /* RBSRealmObjectBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB0E84239131A500CDCFC7 /* RBSRealmObjectBrowserCell.swift */; };
 		B6EB0E8D239131A500CDCFC7 /* RealmPropertyBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB0E85239131A500CDCFC7 /* RealmPropertyBrowser.swift */; };
-		B6EB0E912391361100CDCFC7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB0E902391361100CDCFC7 /* Realm.framework */; };
+		B6EB0E93239145E100CDCFC7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB0E92239145E100CDCFC7 /* RealmSwift.framework */; };
+		B6EB0E95239145F200CDCFC7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB0E94239145F200CDCFC7 /* Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49C466397259EDE90BA77B7A /* Pods-RBSRealmBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBSRealmBrowser.release.xcconfig"; path = "Target Support Files/Pods-RBSRealmBrowser/Pods-RBSRealmBrowser.release.xcconfig"; sourceTree = "<group>"; };
-		89462FFFD3B278D6504EF39E /* Pods-RBSRealmBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBSRealmBrowser.debug.xcconfig"; path = "Target Support Files/Pods-RBSRealmBrowser/Pods-RBSRealmBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		B6EB0E6C239130CF00CDCFC7 /* RBSRealmBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBSRealmBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EB0E6F239130CF00CDCFC7 /* RBSRealmBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBSRealmBrowser.h; sourceTree = "<group>"; };
 		B6EB0E70239130CF00CDCFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +34,8 @@
 		B6EB0E85239131A500CDCFC7 /* RealmPropertyBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmPropertyBrowser.swift; path = ../../Pod/Classes/RealmPropertyBrowser.swift; sourceTree = "<group>"; };
 		B6EB0E8E239131FB00CDCFC7 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EB0E902391361100CDCFC7 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C20F9807C0F7205ABAD2D652 /* Pods_RBSRealmBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBSRealmBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EB0E92239145E100CDCFC7 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B6EB0E94239145F200CDCFC7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6EB0E912391361100CDCFC7 /* Realm.framework in Frameworks */,
-				89D10CCA90FA57A641CC7EC3 /* Pods_RBSRealmBrowser.framework in Frameworks */,
+				B6EB0E95239145F200CDCFC7 /* Realm.framework in Frameworks */,
+				B6EB0E93239145E100CDCFC7 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +54,10 @@
 		571823CED0BA650AC7790C4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6EB0E94239145F200CDCFC7 /* Realm.framework */,
+				B6EB0E92239145E100CDCFC7 /* RealmSwift.framework */,
 				B6EB0E902391361100CDCFC7 /* Realm.framework */,
 				B6EB0E8E239131FB00CDCFC7 /* Realm.framework */,
-				C20F9807C0F7205ABAD2D652 /* Pods_RBSRealmBrowser.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,8 +100,6 @@
 		BCCC49E5AE6F2290818A23C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89462FFFD3B278D6504EF39E /* Pods-RBSRealmBrowser.debug.xcconfig */,
-				49C466397259EDE90BA77B7A /* Pods-RBSRealmBrowser.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -124,7 +122,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6EB0E74239130CF00CDCFC7 /* Build configuration list for PBXNativeTarget "RBSRealmBrowser" */;
 			buildPhases = (
-				7F6193C9DEE52053536A0C7F /* [CP] Check Pods Manifest.lock */,
 				B6EB0E67239130CF00CDCFC7 /* Headers */,
 				B6EB0E68239130CF00CDCFC7 /* Sources */,
 				B6EB0E69239130CF00CDCFC7 /* Frameworks */,
@@ -179,31 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7F6193C9DEE52053536A0C7F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RBSRealmBrowser-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6EB0E68239130CF00CDCFC7 /* Sources */ = {
@@ -350,7 +322,6 @@
 		};
 		B6EB0E75239130CF00CDCFC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89462FFFD3B278D6504EF39E /* Pods-RBSRealmBrowser.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -361,7 +332,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"${BUILT_PRODUCTS_DIR}/RealmSwift",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RBSRealmBrowser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -381,7 +352,6 @@
 		};
 		B6EB0E76239130CF00CDCFC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C466397259EDE90BA77B7A /* Pods-RBSRealmBrowser.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -392,7 +362,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"${BUILT_PRODUCTS_DIR}/RealmSwift",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RBSRealmBrowser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
