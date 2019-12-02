@@ -33,7 +33,7 @@ public final class RBSRealmBrowser: UIViewController {
     
     private var filterOptions: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: ["All", "Hide base Realm models"])
-        segmentedControl.tintColor =  .lightGray
+        segmentedControl.tintColor =  .white
         let attributes = [NSAttributedString.Key.foregroundColor: RealmStyle.tintColor]
         segmentedControl.setTitleTextAttributes(attributes, for: .selected)
         return segmentedControl
@@ -183,7 +183,7 @@ public final class RBSRealmBrowser: UIViewController {
             viewRealm.backgroundColor = .white
             navigationController?.view.backgroundColor = .white
             navigationController?.navigationBar.tintColor = .black
-            navigationController?.navigationBar.backgroundColor = .white
+            navigationController?.navigationBar.backgroundColor = RealmStyle.tintColor
             navigationController?.toolbar.backgroundColor = .darkGray
             viewRealm.tableView.backgroundColor = .white
 //        }
