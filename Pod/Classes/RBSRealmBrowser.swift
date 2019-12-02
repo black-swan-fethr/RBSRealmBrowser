@@ -182,6 +182,7 @@ public final class RBSRealmBrowser: UIViewController {
 //        } else {
             viewRealm.backgroundColor = .white
             navigationController?.view.backgroundColor = .white
+            navigationController?.navigationBar.tintColor = .black
             viewRealm.tableView.backgroundColor = .white
 //        }
         navigationController?.navigationBar.isTranslucent = false
