@@ -71,12 +71,14 @@ final class BrowserEngine {
     }
     
     private func firstSortableProperty(for properties: [Property]) -> String? {
-        guard let property = properties.first(where: { $0.type == .string
-            || $0.type == .int
-            || $0.type == .bool
-            || $0.type == .float
-            || $0.type == .date
-            || $0.type == .double }) else { return nil }
+        guard let property = properties.first(where:
+            { ($0.type == .string
+                || $0.type == .int
+                || $0.type == .bool
+                || $0.type == .float
+                || $0.type == .date
+                || $0.type == .double)
+                && !$0.isArray }) else { return nil }
         return property.name
     }
     

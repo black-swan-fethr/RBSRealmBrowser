@@ -149,13 +149,13 @@ extension UIViewController {
     
    static func configureNavigationBar(_ navigationController: UINavigationController?) {
         guard let navigationController = navigationController else { return }
-        navigationController.navigationBar.barTintColor = RealmStyle.tintColor
-        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.barTintColor = .black
+        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navigationController.navigationBar.tintColor = .black
         navigationController.navigationBar.isTranslucent = false
         if #available(iOS 11.0, *) {
             navigationController.navigationBar.prefersLargeTitles = true
-            navigationController.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            navigationController.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
         }
     }
 }

@@ -44,9 +44,9 @@ final class RealmPropertyBrowser: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        configureBarButtonItems()
+//        configureBarButtonItems()
         subscribeToChanges()
-        observeEditMode()
+//        observeEditMode()
         configureColors()
     }
     
@@ -156,6 +156,7 @@ extension RealmPropertyBrowser: UITableViewDelegate {
             tableView.deselectRow(at: indexPath, animated: true)
             let property = properties[indexPath.row]
             if property.isArray {
+                guard property.objectClassName != nil else { return }
                 let objects = fetchObjects(for: property.name)
                 if objects.isNonEmpty {
                     let object = objects[0]

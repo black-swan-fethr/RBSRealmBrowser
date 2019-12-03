@@ -198,21 +198,11 @@ internal final class RealmPropertyCell: UITableViewCell {
     }
     
     private func configureColors() {
-// Commented out for swift  5.0 compatibility
-//        if #available(iOS 13.0, *) {
-//            textFieldPropValue.backgroundColor = .systemBackground
-//            labelPropertyType.textColor = .label
-//            labelPropertyType.backgroundColor = .systemBackground
-//            labelPropertyTitle.textColor = .label
-//            labelPropertyTitle.backgroundColor = .systemBackground
-//        } else {
-            // Fallback on earlier versions
-            labelPropertyType.textColor = .lightGray
-            labelPropertyType.backgroundColor = .white
-            labelPropertyTitle.textColor = .black
-            labelPropertyTitle.backgroundColor = .white
-            textFieldPropValue.backgroundColor = .white
-//        }
+        labelPropertyType.textColor = .lightGray
+        labelPropertyType.backgroundColor = .white
+        labelPropertyTitle.textColor = .black
+        labelPropertyTitle.backgroundColor = .white
+        textFieldPropValue.backgroundColor = .white
     }
 
     private func configureKeyboard(for propertyType: PropertyType) {

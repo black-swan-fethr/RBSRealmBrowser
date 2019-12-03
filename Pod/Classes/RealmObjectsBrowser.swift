@@ -56,19 +56,19 @@ final class RealmObjectsBrowser: UIViewController, UIViewControllerPreviewingDel
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewRealm.tableView.reloadData()
-        navigationController?.setToolbarHidden(false, animated: animated)
+//        navigationController?.setToolbarHidden(false, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setToolbarHidden(true, animated: animated)
+//        navigationController?.setToolbarHidden(true, animated: animated)
     }
     
     // MARK: - View setup
     
     private func configureBarButtonItems() {
         configureNavigationBar()
-        configureToolBar()
+//        configureToolBar()
     }
     
     private func configureToolBar() {
@@ -88,15 +88,15 @@ final class RealmObjectsBrowser: UIViewController, UIViewControllerPreviewingDel
     
     private func configureNavigationBar() {
         UIViewController.configureNavigationBar(navigationController)
-        let editMode: UIBarButtonItem
-        if isEditMode {
-            editMode = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: .actionEdit)
-        } else {
-            editMode = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: .actionEdit)
-        }
-        let addBBi = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: .actionAdd)
-        editMode.style = .done
-        navigationItem.rightBarButtonItems = [addBBi, editMode]
+//        let editMode: UIBarButtonItem
+//        if isEditMode {
+//            editMode = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: .actionEdit)
+//        } else {
+//            editMode = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: .actionEdit)
+//        }
+//        let addBBi = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: .actionAdd)
+//        editMode.style = .done
+//        navigationItem.rightBarButtonItems = [addBBi, editMode]
     }
     
     private func configureTableView() {
@@ -114,7 +114,7 @@ final class RealmObjectsBrowser: UIViewController, UIViewControllerPreviewingDel
 //            navigationController?.toolbar.backgroundColor = .secondarySystemBackground
 //        } else {
             viewRealm.tableView.backgroundColor = .white
-            viewRealm.tableView.tintColor = RealmStyle.tintColor
+            viewRealm.tableView.tintColor = .black
             navigationController?.toolbar.backgroundColor = .white
 //        }
     }
